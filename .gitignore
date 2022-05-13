@@ -1,1 +1,3 @@
-/HomeWorkObjectsAndClasses.iml
+*.iml
+/out/
+/.idea/
