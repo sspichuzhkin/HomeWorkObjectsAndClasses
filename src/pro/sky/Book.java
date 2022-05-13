@@ -3,12 +3,12 @@ package pro.sky;
 public class Book {
 
     private final String bookName;
-    private final Author authorName;
+    private final Author authorFullName;
     private int publishingYear;
 
-    public Book(String bookName, Author authorName, int publishingYear) {
+    public Book(String bookName, Author authorFullName, int publishingYear) {
         this.bookName = bookName;
-        this.authorName = authorName;
+        this.authorFullName = authorFullName;
         this.publishingYear = publishingYear;
     }
 
@@ -16,8 +16,8 @@ public class Book {
         return bookName;
     }
 
-    public Author getAuthorName() {
-        return authorName;
+    public Author getAuthorFullName() {
+        return authorFullName;
     }
 
     public int getPublishingYear() {
