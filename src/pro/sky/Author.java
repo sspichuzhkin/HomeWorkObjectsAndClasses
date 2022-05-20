@@ -1,5 +1,4 @@
 package pro.sky;
-
 import java.util.Objects;
 
 public class Author {
