@@ -1,4 +1,5 @@
 package pro.sky;
+import java.util.Objects;
 
 public class Author {
 
@@ -22,5 +23,23 @@ public class Author {
 
     public String getAuthorFullName() {
         return authorFullName;
+    }
+
+    @Override
+    public String toString() {
+        return "Book`s author is " + authorFullName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return authorFullName.equals(author.authorFullName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(authorFullName);
     }
 }
